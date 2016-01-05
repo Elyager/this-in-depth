@@ -6,7 +6,7 @@ var developer = {
   name : 'Erik',
   lastName : 'Ochoa',
   isAdult : true,
-  completeName: function(){
+  get completeName() {
     return this.name + this.lastName
   }
 }
@@ -14,7 +14,6 @@ var developer = {
 console.log(developer.name) // Erik
 console.log(developer.lastName) // Ochoa
 console.log(developer.isAdult) // true
-//We call a function that is stored as a property of an object becoming a method
-console.log(developer.completeName()) // ErikOchoa
+console.log(developer.completeName) // ErikOchoa
 
 
